@@ -11,10 +11,10 @@ poeniToMesto x
     | x >= 91   = "prvo"
     | x >= 81   = "drugo"
     | x >= 71   = "trece"
-    | otherwise = "pohvala" 
+    | otherwise = "pohvala"
 
 rezultati :: Poeni -> Mesta
-rezultati = map poeniToMesto 
+rezultati = map poeniToMesto
 
 takmicar :: Takmicari -> Poeni -> [(Takmicar, Mesto)]
 takmicar imena poeni = zip imena (rezultati poeni)
