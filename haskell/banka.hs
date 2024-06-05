@@ -22,3 +22,9 @@ depositToAcc bankAccs accNum depositAmount = map(updateAccount accNum depositAmo
         updateAccount accNum depositAmount (acc, balance)
             | acc == accNum = (acc, balance + depositAmount)
             | otherwise = (acc, balance)
+
+
+{- [1,2,3,4,5]
+
+[a,b,c,d,e]
+[(1,a), (2,b), (3,c)...] -}
